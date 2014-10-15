@@ -15,6 +15,8 @@ gem 'uglifier', '2.1.1'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '4.0.1'
 
+gem 'bcrypt-ruby', '3.1.2'
+
 group :development, :test do 
   gem 'sqlite3', '1.3.8'
   gem 'rspec-rails', '2.13.1'
