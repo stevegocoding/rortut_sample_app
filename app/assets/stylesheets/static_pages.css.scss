@@ -4,6 +4,15 @@
 
 @import "bootstrap";
 
+/* mixins, variables, etc. */ 
+$grayMediumLight: #eaeaea;
+
+@mixin box_sizing {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* universal */
 html {
   overflow-y: scroll;
@@ -28,6 +37,7 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
 }
+
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
@@ -43,6 +53,15 @@ h2 {
   font-weight: normal;
   color: #999;
 }
+
 p{
   font-size: 1.1em; line-height: 1.7em;
+}
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
