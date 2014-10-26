@@ -30,6 +30,6 @@ class User < ActiveRecord::Base
     # one place). Uing self ensures that assignment sets the user's remember_token, 
     # and as a result it will be written to the database along with other attributes
     # when the user is saved. 
-    self.remember_token = User.digest(User.new_remember_toekn)
+    self.remember_token = User.digest(User.new_remember_token)
   end
 end
