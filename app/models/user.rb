@@ -21,6 +21,11 @@ class User < ActiveRecord::Base
   def self.digest(token)
     Digest::SHA1.hexdigest(token.to_s)
   end
+  
+  def feed
+    # This is preliminary for now
+    Micropost.where("user_id = ?", id)
+  end
  
   private
   
